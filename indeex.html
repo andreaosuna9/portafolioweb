@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Andrea Osuna | Portafolio</title>
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="#home">
+                <span class="logo-andrea">Andrea</span><span class="logo-osuna">.</span>
+            </a>
+            <ul class="nav-list" aria-label="Navegación principal">
+                <li><a href="#home" data-translate="home">Inicio</a></li>
+                <li><a href="#about" data-translate="about">Perfil</a></li>
+                <li><a href="#skills" data-translate="skills">Habilidades</a></li>
+                <li><a href="#portfolio" data-translate="portfolio">Proyectos</a></li>
+                <li><a href="#certificates" data-translate="certificates">Certificados</a></li>
+                <li><a href="#contact" data-translate="contact">Contacto</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="language-btn" id="language-btn">
+                        <i class="fas fa-globe"></i>
+                        <span>ES</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="language-dropdown">
+                        <button class="language-option" data-lang="es">
+                            <span>🇪🇸 Español</span>
+                            <i class="fas fa-check"></i>
+                        </button>
+                        <button class="language-option" data-lang="en">
+                            <span>🇺🇸 English</span>
+                            <i class="fas fa-check"></i>
+                        </button>
+                        <button class="language-option" data-lang="fr">
+                            <span>🇫🇷 Français</span>
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-left">
+                <h1 class="hero-title"><span class="stroke">ANDREA</span> <strong>OSUNA RUIZ</strong></h1>
+                <p class="hero-sub" data-translate="hero_sub">Diseñadora de interfaces | Front-End | Bases de Datos</p>
+                <a class="btn primary" href="anexos/AndreaOsunaCV.pdf" download>
+                    <i class="fas fa-download"></i> <span data-translate="download_cv">Descargar CV</span>
+                </a>
+                <div class="hero-social">
+                    <a href="https://github.com/andreaosuna9" aria-label="GitHub"><i
+                            class="devicon-github-original"></i></a>
+                    <a href="https://www.linkedin.com/in/andreaosunaruizz" aria-label="LinkedIn"><i
+                            class="devicon-linkedin-plain"></i></a>
+                    <a href="https://figma.com/@804f3029_b38f_4" aria-label="Figma"><i
+                            class="devicon-figma-plain"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-right" aria-hidden="false">
+                <!-- FOTO PRINCIPAL: recomendado 400x500 px (vertical) -->
+                <div class="hero-image-container">
+                    <img src="imagenes/perfil2.jpeg" alt="Foto de Andrea Osuna">
+                    <div class="hero-image-bg"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERFIL -->
+        <section id="about" class="section container">
+            <h2 class="section-title" data-translate="profile">PERFIL</h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="about_text">
+                        Soy estudiante de Ingeniería en Tecnologías de la Información, ya por finalizar mi carrera, me
+                        gusta
+                        el desarrollo web, el diseño funcional y la resolución de problemas usando la tecnología. Me
+                        gusta
+                        mantener un equilibrio entre la creatividad y la lógica técnica, buscando siempre soluciones
+                        eficientes y bien estructuradas. Soy una persona proactiva y creativa, aprendo rápido por mi
+                        cuenta
+                        y me adapto con facilidad. Me considero una buena compañera, con habilidad para el trabajo en
+                        equipo
+                        y la atención al cliente. Busco aplicar mi potencial para generar resultados reales y que
+                        beneficien
+                        a la sociedad.
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-translate="location">México</span></li>
+                        <li><i class="fas fa-graduation-cap"></i> <span data-translate="student">Estudiante de
+                                Ingeniería en TI</span></li>
+                        <li><i class="fas fa-lightbulb"></i> <span data-translate="interest">Interés: Bases de datos y
+                                Front-end</span></li>
+                    </ul>
+                </div>
+
+                <!-- TIMELINE -->
+                <div class="timeline">
+                    <div class="time-item">
+                        <div class="time-dot"></div>
+                        <span class="time-year">2023</span>
+                        <p class="time-text" data-translate="timeline_2023">Proyectos web</p>
+                    </div>
+                    <div class="time-item">
+                        <div class="time-dot"></div>
+                        <span class="time-year">2024</span>
+                        <p class="time-text" data-translate="timeline_2024">Diseño en Figma y Redes</p>
+                    </div>
+                    <div class="time-item">
+                        <div class="time-dot"></div>
+                        <span class="time-year">2025</span>
+                        <p class="time-text" data-translate="timeline_2025">Bases de datos y Programación Orientada a
+                            Objetos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="skills" class="section container">
+            <h2 class="section-title" data-translate="skills_title">HABILIDADES</h2>
+            <div class="skills-grid">
+                <div class="skill"><i class="devicon-html5-plain colored"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill"><i class="devicon-css3-plain colored"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill"><i class="devicon-mysql-plain colored"></i>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill"><i class="devicon-figma-plain colored"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="skill"><i class="devicon-cplusplus-plain colored"></i>
+                    <p>C++</p>
+                </div>
+                <div class="skill"><i class="devicon-java-plain colored"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill"><i class="devicon-github-original"></i>
+                    <p>GitHub</p>
+                </div>
+                <div class="skill"><i class="devicon-vscode-plain colored"></i>
+                    <p>VS Code</p>
+                </div>
+                <div class="skill"><i class="devicon-jira-plain colored"></i>
+                    <p>Jira</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="portfolio" class="section container">
+            <h2 class="section-title" data-translate="projects">PROYECTOS</h2>
+
+            <div class="portfolio-grid">
+                <!-- Cada tarjeta tiene enlace a su lightbox específico -->
+                <article class="card">
+                    <a href="#project-figma" class="card-link" aria-label="Abrir galería Proyecto Interfaz Figma">
+                        <div class="card-image">
+                            <img src="imagenes/figmacover.png" alt="Proyecto: Interfaz de Sistema — portada">
+                            <div class="card-overlay">
+                                <span data-translate="view_details">Ver detalles</span>
+                            </div>
+                        </div>
+                        <h4>KomiKomi — Figma</h4>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="https://andreaosuna9.github.io/pagresponsiva/" class="card-link" target="_blank"
+                        rel="noopener">
+                        <div class="card-image">
+                            <img src="imagenes/sitio.png" alt="Proyecto: Sitio Web Responsivo">
+                            <div class="card-overlay">
+                                <span data-translate="view_project">Ver proyecto</span>
+                            </div>
+                        </div>
+                        <h4 data-translate="project2_title">Sitio Web Responsivo</h4>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="#project-redes" class="card-link" aria-label="Abrir proyecto Redes">
+                        <div class="card-image">
+                            <img src="imagenes/redeslogo.png" alt="Proyecto: Propuesta de redes - portada">
+                            <div class="card-overlay">
+                                <span data-translate="view_details">Ver detalles</span>
+                            </div>
+                        </div>
+                        <h4 data-translate="project3_title">Propuesta de Redes — Universidad</h4>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX: FIGMA -->
+        <div id="project-figma" class="lightbox">
+            <a href="#portfolio" class="lightbox-overlay" aria-label="Cerrar lightbox"></a>
+            <div class="lightbox-content">
+                <a class="lightbox-close" href="#portfolio" aria-label="Cerrar">×</a>
+                <h3>KomiKomi — Figma</h3>
+                <p class="light-desc" data-translate="project_figma_desc">
+                    Diseño de una app para encontrar restaurantes en Mazatlán. La app permite filtrar
+                    por tipo de comida y ver detalles (menús, precios, horarios, reseñas y disponibilidad). Además, usa
+                    IA para dar recomendaciones personalizadas.
+                </p>
+                <div class="light-gallery">
+                    <figure>
+                        <img src="imagenes/login.png" alt="login - Figma">
+                        <figcaption><em data-translate="figma_login">Pantalla login general</em></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="imagenes/cuestionario.png" alt="cuestionario incial - Figma">
+                        <figcaption><em data-translate="figma_questionnaire">Cuestionario inicial para el usuario</em>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="imagenes/principal.png" alt="pantalla principal usuario - Figma">
+                        <figcaption><em data-translate="figma_main">Pantalla principal del usuario</em></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="imagenes/restaurante.png" alt="galería de restaurante - Figma">
+                        <figcaption><em data-translate="figma_restaurant">Galería/Perfil de restaurante</em>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- LIGHTBOX: REDES -->
+        <div id="project-redes" class="lightbox">
+            <a href="#portfolio" class="lightbox-overlay" aria-label="Cerrar lightbox"></a>
+            <div class="lightbox-content">
+                <a class="lightbox-close" href="#portfolio" aria-label="Cerrar">×</a>
+                <h3 data-translate="project_networks_title">Propuesta de Mejora de Red — Universidad</h3>
+                <p class="light-desc" data-translate="project_networks_desc">Proyecto de infraestructura de red para
+                    mejorar la conectividad dentro de la universidad realizado en Cisco Packet Tracer.
+                    Análisis, diseño y planificación de la red, selección de equipos y materiales con su presupuesto.
+                    Implementación de protocolos.</p>
+                <a href="https://drive.google.com/drive/folders/1TyoKGxRr5ytOxdVBXta278-K_gk1AMig?usp=sharing" target="_blank" data-translate="documentation_link">Ver documentación</a>
+                <div class="light-gallery">
+                    <figure>
+                        <img src="imagenes/topologia.png" alt="Topología actual de la red">
+                        <figcaption><em data-translate="networks_topology">Topología propuesta</em></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="imagenes/edificio.png" alt="Propuesta optimizada">
+                        <figcaption><em data-translate="networks_building">Propuesta para el edificio de TI</em>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- CERTIFICADOS -->
+        <section id="certificates" class="section container">
+            <h2 class="section-title" data-translate="certificates_title">CERTIFICADOS</h2>
+            <div class="cert-grid">
+                <article class="cert-card">
+                    <a href="#cert-ingles">
+                        <div class="cert-image">
+                            <img src="imagenes/toefl.png" alt="Certificado de Inglés">
+                            <div class="cert-overlay">
+                                <span data-translate="view_certificate">Ver certificado</span>
+                            </div>
+                        </div>
+                        <h4 data-translate="english_cert">Certificado de Inglés</h4>
+                    </a>
+                </article>
+
+                <article class="cert-card">
+                    <a href="#cert-redes">
+                        <div class="cert-image">
+                            <img src="imagenes/ciscologo.png" alt="Certificado Cisco">
+                            <div class="cert-overlay">
+                                <span data-translate="view_certificate">Ver certificado</span>
+                            </div>
+                        </div>
+                        <h4 data-translate="cisco_cert">Curso de Redes Cisco</h4>
+                    </a>
+                </article>
+
+                <article class="cert-card">
+                    <a href="#cert-ti">
+                        <div class="cert-image">
+                            <img src="imagenes/ciscologo.png" alt="Certificado Esenciales de TI">
+                            <div class="cert-overlay">
+                                <span data-translate="view_certificate">Ver certificado</span>
+                            </div>
+                        </div>
+                        <h4 data-translate="ti_cert">Esenciales de TI</h4>
+                    </a>
+                </article>
+
+                <article class="cert-card">
+                    <a href="#cert-poo">
+                        <div class="cert-image">
+                            <img src="imagenes/poologo.png" alt="Certificado Programación Orientada a Objetos">
+                            <div class="cert-overlay">
+                                <span data-translate="view_certificate">Ver certificado</span>
+                            </div>
+                        </div>
+                        <h4 data-translate="poo_cert">Programación Orientada a Objetos</h4>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- LIGHTBOXS DE CERTIFICADOS -->
+        <div id="cert-ingles" class="lightbox">
+            <a href="#certificates" class="lightbox-overlay" aria-label="Cerrar lightbox"></a>
+            <div class="lightbox-content">
+                <a class="lightbox-close" href="#certificates" aria-label="Cerrar">×</a>
+                <img src="imagenes/toeflcertificado.png" alt="Certificado de inglés (ampliado)">
+            </div>
+        </div>
+
+        <div id="cert-redes" class="lightbox">
+            <a href="#certificates" class="lightbox-overlay" aria-label="Cerrar lightbox"></a>
+            <div class="lightbox-content">
+                <a class="lightbox-close" href="#certificates" aria-label="Cerrar">×</a>
+                <img src="imagenes/redescertificado.jpg" alt="Certificado Cisco (ampliado)">
+            </div>
+        </div>
+
+        <div id="cert-ti" class="lightbox">
+            <a href="#certificates" class="lightbox-overlay" aria-label="Cerrar lightbox"></a>
+            <div class="lightbox-content">
+                <a class="lightbox-close" href="#certificates" aria-label="Cerrar">×</a>
+                <img src="imagenes/itcertificado.jpg" alt="Certificado Esenciales de TI (ampliado)">
+            </div>
+        </div>
+
+        <div id="cert-poo" class="lightbox">
+            <a href="#certificates" class="lightbox-overlay" aria-label="Cerrar lightbox"></a>
+            <div class="lightbox-content">
+                <a class="lightbox-close" href="#certificates" aria-label="Cerrar">×</a>
+                <img src="imagenes/poocertificado.jpg" alt="Certificado Programación Orientada a Objetos (ampliado)">
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section container">
+            <h2 class="section-title" data-translate="contact_title">CONTACTO</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> andyosuna18@gmail.com</p>
+                    <div class="redes">
+                        <a href="https://github.com/andreaosuna9" aria-label="GitHub"><i
+                                class="devicon-github-original"></i></a>
+                        <a href="www.linkedin.com/in/andreaosunaruizz" aria-label="LinkedIn"><i
+                                class="devicon-linkedin-plain"></i></a>
+                        <a href="https://figma.com/@804f3029_b38f_4" aria-label="Figma"><i
+                                class="devicon-figma-plain"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <label for="cname" data-translate="form_name">Nombre</label>
+                    <input id="cname" name="name" type="text" data-translate="form_name_placeholder"
+                        placeholder="Tu nombre">
+
+                    <label for="cemail" data-translate="form_email">Correo</label>
+                    <input id="cemail" name="email" type="email" data-translate="form_email_placeholder"
+                        placeholder="tu@correo.com">
+
+                    <label for="cmessage" data-translate="form_message">Mensaje</label>
+                    <textarea id="cmessage" name="message" rows="5" data-translate="form_message_placeholder"
+                        placeholder="Escribe tu mensaje..."></textarea>
+
+                    <button class="btn primary" type="button" data-translate="form_send">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Andrea Osuna</h3>
+                    <p data-translate="footer_desc">Diseñadora de interfaces | Front-End | Bases de Datos</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer_nav">Navegación</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#home" data-translate="home">Inicio</a></li>
+                        <li><a href="#about" data-translate="about">Perfil</a></li>
+                        <li><a href="#skills" data-translate="skills">Habilidades</a></li>
+                        <li><a href="#portfolio" data-translate="portfolio">Proyectos</a></li>
+                        <li><a href="#certificates" data-translate="certificates">Certificados</a></li>
+                        <li><a href="#contact" data-translate="contact">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer_contact">Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> andyosuna18@gmail.com</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/andreaosuna9" aria-label="GitHub"><i
+                                class="devicon-github-original"></i></a>
+                        <a href="https://www.linkedin.com/in/andreaosunaruizz" aria-label="LinkedIn"><i
+                                class="devicon-linkedin-plain"></i></a>
+                        <a href="https://figma.com/@804f3029_b38f_4" aria-label="Figma"><i
+                                class="devicon-figma-plain"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer_language">Idioma</h4>
+                    <div class="footer-language">
+                        <button class="footer-lang-btn" data-lang="es">Español</button>
+                        <button class="footer-lang-btn" data-lang="en">English</button>
+                        <button class="footer-lang-btn" data-lang="fr">Français</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-translate="footer">© 2025 Andrea Osuna Ruiz | Portafolio Profesional</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // menú hamburguesa
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.getElementById('hamburger');
+            const navList = document.querySelector('.nav-list');
+
+            hamburger.addEventListener('click', function () {
+                navList.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            // Cerrar menú al hacer clic en un enlace
+            const navLinks = document.querySelectorAll('.nav-list a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navList.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+
+            // Sistema de traducción
+            const languageBtn = document.getElementById('language-btn');
+            const languageDropdown = document.getElementById('language-dropdown');
+            const languageOptions = document.querySelectorAll('.language-option');
+            const footerLangBtns = document.querySelectorAll('.footer-lang-btn');
+
+            // Textos en diferentes idiomas
+            const translations = {
+                'es': {
+                    'home': 'Inicio',
+                    'about': 'Perfil',
+                    'skills': 'Habilidades',
+                    'portfolio': 'Proyectos',
+                    'certificates': 'Certificados',
+                    'contact': 'Contacto',
+                    'hero_sub': 'Diseñadora de interfaces | Front-End | Bases de Datos',
+                    'download_cv': 'Descargar CV',
+                    'profile': 'PERFIL',
+                    'about_text': 'Soy estudiante de Ingeniería en Tecnologías de la Información, ya por finalizar mi carrera, me gusta el desarrollo web, el diseño funcional y la resolución de problemas usando la tecnología. Me gusta mantener un equilibrio entre la creatividad y la lógica técnica, buscando siempre soluciones eficientes y bien estructuradas. Soy una persona proactiva y creativa, aprendo rápido por mi cuenta y me adapto con facilidad. Me considero una buena compañera, con habilidad para el trabajo en equipo y la atención al cliente. Busco aplicar mi potencial para generar resultados reales y que beneficien a la sociedad.',
+                    'location': 'México',
+                    'student': 'Estudiante de Ingeniería en TI',
+                    'interest': 'Interés: Bases de datos y Front-end',
+                    'timeline_2023': 'Proyectos web',
+                    'timeline_2024': 'Diseño en Figma y Redes',
+                    'timeline_2025': 'Bases de datos y Programación Orientada a Objetos',
+                    'skills_title': 'HABILIDADES',
+                    'projects': 'PROYECTOS',
+                    'view_details': 'Ver detalles',
+                    'view_project': 'Ver proyecto',
+                    'project2_title': 'Sitio Web Responsivo',
+                    'project3_title': 'Propuesta de Redes — Universidad',
+                    'project_figma_desc': 'Diseño de una app para encontrar restaurantes en Mazatlán. La app permite filtrar por tipo de comida y ver detalles (menús, precios, horarios, reseñas y disponibilidad). Además, usa IA para dar recomendaciones personalizadas.',
+                    'figma_login': 'Pantalla login general',
+                    'figma_questionnaire': 'Cuestionario inicial para el usuario',
+                    'figma_main': 'Pantalla principal del usuario',
+                    'figma_restaurant': 'Galería/Perfil de restaurante',
+                    'project_networks_title': 'Propuesta de Mejora de Red — Universidad',
+                    'project_networks_desc': 'Proyecto de infraestructura de red para mejorar la conectividad dentro de la universidad realizado en Cisco Packet Tracer.',
+                    'networks_topology': 'Topología propuesta',
+                    'networks_building': 'Propuesta para el edificio de TI',
+                    'documentation_link': 'Ver documentación',
+                    'certificates_title': 'CERTIFICADOS',
+                    'view_certificate': 'Ver certificado',
+                    'english_cert': 'Certificado de Inglés',
+                    'cisco_cert': 'Curso de Redes Cisco',
+                    'ti_cert': 'Esenciales de TI',
+                    'poo_cert': 'Programación Orientada a Objetos',
+                    'contact_title': 'CONTACTO',
+                    'form_name': 'Nombre',
+                    'form_name_placeholder': 'Tu nombre',
+                    'form_email': 'Correo',
+                    'form_email_placeholder': 'tu@correo.com',
+                    'form_message': 'Mensaje',
+                    'form_message_placeholder': 'Escribe tu mensaje...',
+                    'form_send': 'Enviar',
+                    'footer': '© 2025 Andrea Osuna Ruiz | Portafolio Profesional',
+                    'footer_desc': 'Diseñadora de interfaces | Front-End | Bases de Datos',
+                    'footer_nav': 'Navegación',
+                    'footer_contact': 'Contacto',
+                    'footer_language': 'Idioma'
+                },
+                'en': {
+                    'home': 'Home',
+                    'about': 'About',
+                    'skills': 'Skills',
+                    'portfolio': 'Projects',
+                    'certificates': 'Certificates',
+                    'contact': 'Contact',
+                    'hero_sub': 'Interface Designer | Front-End | Databases',
+                    'download_cv': 'Download CV',
+                    'profile': 'PROFILE',
+                    'about_text': 'I am a student of Information Technology Engineering, about to finish my degree. I enjoy web development, functional design, and problem-solving using technology. I like to maintain a balance between creativity and technical logic, always seeking efficient and well-structured solutions. I am a proactive and creative person, I learn quickly on my own and adapt easily. I consider myself a good teammate, with skills for teamwork and customer service. I seek to apply my potential to generate real results that benefit society.',
+                    'location': 'Mexico',
+                    'student': 'IT Engineering Student',
+                    'interest': 'Interest: Databases and Front-end',
+                    'timeline_2023': 'Web projects',
+                    'timeline_2024': 'Figma Design and Networks',
+                    'timeline_2025': 'Databases and Object-Oriented Programming',
+                    'skills_title': 'SKILLS',
+                    'projects': 'PROJECTS',
+                    'view_details': 'View details',
+                    'view_project': 'View project',
+                    'project2_title': 'Responsive Web Portfolio',
+                    'project3_title': 'Network Proposal — University',
+                    'project_figma_desc': 'Design of an app to find restaurants in Mazatlán. The app allows filtering by type of food and viewing details (menus, prices, schedules, reviews, and availability). Additionally, it uses AI to provide personalized recommendations.',
+                    'figma_login': 'General login screen',
+                    'figma_questionnaire': 'Initial questionnaire for the user',
+                    'figma_main': 'User main screen',
+                    'figma_restaurant': 'Restaurant gallery/profile',
+                    'project_networks_title': 'Network Improvement Proposal — University',
+                    'project_networks_desc': 'Network infrastructure project to improve connectivity within the university carried out in Cisco Packet Tracer.',
+                    'networks_topology': 'Proposed topology',
+                    'documentation_link': 'View documentation',
+                    'networks_building': 'Proposal for the IT building.',
+                    'certificates_title': 'CERTIFICATES',
+                    'view_certificate': 'View certificate',
+                    'english_cert': 'English Certificate',
+                    'cisco_cert': 'Cisco Networking Course',
+                    'ti_cert': 'IT Essentials',
+                    'poo_cert': 'Object-Oriented Programming',
+                    'contact_title': 'CONTACT',
+                    'form_name': 'Name',
+                    'form_name_placeholder': 'Your name',
+                    'form_email': 'Email',
+                    'form_email_placeholder': 'your@email.com',
+                    'form_message': 'Message',
+                    'form_message_placeholder': 'Write your message...',
+                    'form_send': 'Send',
+                    'footer': '© 2025 Andrea Osuna Ruiz | Professional Portfolio',
+                    'footer_desc': 'Interface Designer | Front-End | Databases',
+                    'footer_nav': 'Navigation',
+                    'footer_contact': 'Contact',
+                    'footer_language': 'Language'
+                },
+                'fr': {
+                    'home': 'Accueil',
+                    'about': 'Profil',
+                    'skills': 'Compétences',
+                    'portfolio': 'Projets',
+                    'certificates': 'Certificats',
+                    'contact': 'Contact',
+                    'hero_sub': 'Designer d\'interfaces | Front-End | Bases de données',
+                    'download_cv': 'Télécharger CV',
+                    'profile': 'PROFIL',
+                    'about_text': 'Je suis étudiante en Ingénierie des Technologies de l\'Information, sur le point de terminer mes études. J\'aime le développement web, le design fonctionnel et la résolution de problèmes en utilisant la technologie. J\'aime maintenir un équilibre entre la créativité et la logique technique, en cherchant toujours des solutions efficaces et bien structurées. Je suis une personne proactive et créative, j\'apprends rapidement par moi-même et je m\'adapte facilement. Je me considère comme une bonne collègue, avec des compétences pour le travail d\'équipe et le service client. Je cherche à appliquer mon potentiel pour générer des résultats réels qui bénéficient à la société.',
+                    'location': 'Mexique',
+                    'student': 'Étudiante en Ingénierie TI',
+                    'interest': 'Intérêt: Bases de données et Front-end',
+                    'timeline_2023': 'Projets web',
+                    'timeline_2024': 'Design Figma et Réseaux',
+                    'timeline_2025': 'Bases de données et Programmation Orientée Objet',
+                    'skills_title': 'COMPÉTENCES',
+                    'projects': 'PROJETS',
+                    'view_details': 'Voir détails',
+                    'view_project': 'Voir projet',
+                    'project2_title': 'Portfolio Web Responsive',
+                    'project3_title': 'Proposition de Réseau — Université',
+                    'project_figma_desc': 'Conception d\'une application pour trouver des restaurants à Mazatlán. L\'application permet de filtrer par type de cuisine et de voir les détails (menus, prix, horaires, avis et disponibilité). De plus, elle utilise l\'IA pour donner des recommandations personnalisées.',
+                    'figma_login': 'Écran de connexion général',
+                    'figma_questionnaire': 'Questionnaire initial pour l\'utilisateur',
+                    'figma_main': 'Écran principal de l\'utilisateur',
+                    'figma_restaurant': 'Galerie/Profil du restaurant',
+                    'project_networks_title': 'Proposition d\'Amélioration du Réseau — Université',
+                    'project_networks_desc': 'Projet d\'infrastructure réseau pour améliorer la connectivité au sein de l\'université réalisé dans Cisco Packet Tracer.',
+                    'networks_topology': 'Topologie proposée',
+                    'networks_building': 'Proposition pour le bâtiment TI',
+                    'documentation_link': 'Voir la documentation',
+                    'certificates_title': 'CERTIFICATS',
+                    'view_certificate': 'Voir certificat',
+                    'english_cert': 'Certificat d\'Anglais',
+                    'cisco_cert': 'Cours de Réseaux Cisco',
+                    'ti_cert': 'Essentiels de l\'IT',
+                    'poo_cert': 'Programmation Orientée Objet',
+                    'contact_title': 'CONTACT',
+                    'form_name': 'Nom',
+                    'form_name_placeholder': 'Votre nom',
+                    'form_email': 'Email',
+                    'form_email_placeholder': 'votre@email.com',
+                    'form_message': 'Message',
+                    'form_message_placeholder': 'Écrivez votre message...',
+                    'form_send': 'Envoyer',
+                    'footer': '© 2025 Andrea Osuna Ruiz | Portfolio Professionnel',
+                    'footer_desc': 'Designer d\'interfaces | Front-End | Bases de données',
+                    'footer_nav': 'Navigation',
+                    'footer_contact': 'Contact',
+                    'footer_language': 'Langue'
+                }
+            };
+
+            // Abrir/cerrar dropdown de idiomas
+            languageBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                languageDropdown.classList.toggle('active');
+                languageBtn.classList.toggle('active');
+            });
+
+            // Cerrar dropdown al hacer clic fuera
+            document.addEventListener('click', function () {
+                languageDropdown.classList.remove('active');
+                languageBtn.classList.remove('active');
+            });
+
+            // Prevenir que el dropdown se cierre al hacer clic dentro
+            languageDropdown.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+
+            // Función para cambiar el idioma
+            function changeLanguage(language) {
+                const elements = document.querySelectorAll('[data-translate]');
+
+                elements.forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (translations[language] && translations[language][key]) {
+                        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                            element.setAttribute('placeholder', translations[language][key]);
+                        } else {
+                            element.textContent = translations[language][key];
+                        }
+                    }
+                });
+
+                // Actualizar el botón de idioma
+                const languageText = languageBtn.querySelector('span');
+                const languageMap = {
+                    'es': 'ES',
+                    'en': 'EN',
+                    'fr': 'FR'
+                };
+                languageText.textContent = languageMap[language];
+
+                // Actualizar checkmarks
+                languageOptions.forEach(option => {
+                    const check = option.querySelector('.fa-check');
+                    if (option.dataset.lang === language) {
+                        check.style.opacity = '1';
+                    } else {
+                        check.style.opacity = '0';
+                    }
+                });
+
+                // Cambiar el atributo lang del documento
+                document.documentElement.lang = language;
+
+                // Guardar preferencia de idioma
+                localStorage.setItem('preferred-language', language);
+
+                // Cerrar dropdown
+                languageDropdown.classList.remove('active');
+                languageBtn.classList.remove('active');
+            }
+
+            // Event listeners para opciones de idioma
+            languageOptions.forEach(option => {
+                option.addEventListener('click', function () {
+                    changeLanguage(this.dataset.lang);
+                });
+            });
+
+            // Event listeners para botones de idioma en el footer
+            footerLangBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    changeLanguage(this.dataset.lang);
+                });
+            });
+
+            // Establecer idioma inicial
+            const savedLanguage = localStorage.getItem('preferred-language') || 'es';
+            changeLanguage(savedLanguage);
+        });
+    </script>
+</body>
+
+</html>
